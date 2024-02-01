@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 4 project - guest book</title>
+    <script type="module" src="/main.js" defer></script>
+  </head>
+  <body>
+    <div id="formContainer">
+      <form id="guestForm">
+        <label for="name">Name</label>
+        <input type="text" name="Name" placeholder="Enter Name" required />
+        <input
+          type="message"
+          name="message"
+          placeholder="Enter your message"
+          required
+        />
+        <fieldset class="reactions" name="reactions">
+          How was your service?
+          <input type="radio" id="Happy" name="reaction" value="😃" />
+          <label for="Happy">😃 Happy</label>
+          <input type="radio" id="Terrible" name="reaction" value="💩" />
+          <label for="Terrible">😃 Terrible</label>
+          <input type="radio" id="Wink" name="reaction" value="😜" />
+          <label for="Wink">😜 Wink</label>
+          <input type="radio" id="Awkward" name="reaction" value="😬" />
+          <label for="Awkward">😬 Awkward</label>
+          <input type="radio" id="Meh" name="reaction" value="😐" />
+          <label for="Meh">😐 Meh</label>
+          <input type="radio" id="Unsure" name="reaction" value="🤔" />
+          <label for="Unsure">🤔 Unsure</label>
+          <input type="radio" id="Disgusting" name="reaction" value="🤢" />
+          <label for="Disgusting">🤢 Disgusting</label>
+        </fieldset>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
