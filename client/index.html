@@ -6,18 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Week 4 project - guest book</title>
     <script type="module" src="/main.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <h1>Welcome to my guestbook!</h1>
     <div id="formContainer">
       <form id="guestForm">
-        <label for="name">Name</label>
-        <input type="text" name="Name" placeholder="Enter Name" required />
-        <input
-          type="message"
-          name="message"
-          placeholder="Enter your message"
-          required
-        />
+        <label
+          >Name<input type="text" name="Name" placeholder="Enter Name" required
+        /></label>
+        <label
+          >Message<input
+            type="message"
+            name="message"
+            placeholder="Enter your message"
+            required
+        /></label>
         <fieldset class="reactions" name="reactions">
           How was your service?
           <input type="radio" id="Happy" name="reaction" value="😃" />
