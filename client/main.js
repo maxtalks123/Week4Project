@@ -7,7 +7,7 @@ form.addEventListener("submit", async (event) => {
   event.preventDefault();
   const formData = new FormData(form);
   const guestData = Object.fromEntries(formData);
-  const response = await fetch(`${baseURL}`, {
+  const response = await fetch(`${baseURL}/reviews`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -28,7 +28,7 @@ form.addEventListener("submit", async (event) => {
 // test();
 
 async function fetchGuestList() {
-  const guestList = await fetch(`${baseURL}`);
+  const guestList = await fetch(`${baseURL}/reviews`);
   let result = await guestList.json();
   return result;
 }
