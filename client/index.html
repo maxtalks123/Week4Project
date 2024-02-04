@@ -13,21 +13,25 @@
     <div id="formContainer">
       <form id="guestForm">
         <label
-          >Name<input type="text" name="Name" placeholder="Enter Name" required
+          >Username<input
+            type="text"
+            name="username"
+            placeholder="Enter Name"
+            required
         /></label>
         <label
-          >Message<input
+          >message<input
             type="message"
             name="message"
             placeholder="Enter your message"
             required
         /></label>
-        <fieldset class="reactions" name="reactions">
+        <fieldset class="reactions" name="reaction">
           How was your service?
           <input type="radio" id="Happy" name="reaction" value="😃" />
           <label for="Happy">😃 Happy</label>
           <input type="radio" id="Terrible" name="reaction" value="💩" />
-          <label for="Terrible">😃 Terrible</label>
+          <label for="Terrible">💩 Terrible</label>
           <input type="radio" id="Wink" name="reaction" value="😜" />
           <label for="Wink">😜 Wink</label>
           <input type="radio" id="Awkward" name="reaction" value="😬" />
@@ -41,6 +45,9 @@
         </fieldset>
         <button type="submit">Submit</button>
       </form>
+    </div>
+    <div id="PreviousGuests">
+      <h3>What previous guests said!</h3>
     </div>
   </body>
 </html>

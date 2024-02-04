@@ -41,6 +41,30 @@ input {
   padding: 5px;
   margin: 5px;
 } */
+#PreviousGuests {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 5px;
+  margin-top: 10px;
+  position: absolute;
+  top: 25rem;
+  left: 1rem;
+  background-color: darkblue;
+  width: 90vw;
+  border: 3px solid black;
+}
+li {
+  padding: 5px;
+  margin: 8px;
+  background-color: gray;
+  color: white;
+  width: 75vh;
+}
+h3 {
+  color: white;
+  text-decoration: underline;
+}
 
 .reactions {
   width: 80vw;
